@@ -118,3 +118,11 @@ Additional notifier actions can be written and added. Some might include:
 Right now at this early stage, the entry point for using the tool is a little
 weak. Currently you need to copy and modify the sample watching script included
 in the root of the distribution.
+
+TODO:
+-----
+
+* Clean up the entry point and configuration
+* Potentially move to a attr style access for API data instead of dict
+* Add additional notifier backends as noted above
+* Add a micro web UI for managing rules
