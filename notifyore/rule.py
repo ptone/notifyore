@@ -1,6 +1,6 @@
 import re
 import time
-import warning
+import warnings
 
 
 class Rule(object):
@@ -59,7 +59,7 @@ class Rule(object):
                         match_key)
         for filter in [self.match_attributes, self.exclude_attributes]:
             if ('topic' in filter and 'group' in filter):
-                warning.warn(
+                warnings.warn(
                     "both topic and group in a filter will limit notices to only the topic")
 
         # TODO support case insensive message search
