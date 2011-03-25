@@ -109,7 +109,7 @@ Current builtin actions include:
 Additional notifier actions can be written and added. Some might include:
 
 * direct Prowl API, to use without growl or a Mac
-* use Ubuntu's libnotify (growl like)
+* libnotify (growl like utility on linux)
 * email
 * sms
 * Android C2DM push system
