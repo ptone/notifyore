@@ -1,5 +1,5 @@
-Noifyore: a notification tool for Convore.com
-=============================================
+Notifyore: a notification tool for Convore.com
+==============================================
 
 This tool watches the stream of events provided by the Convore API, and
 provides a way for you to receive notifications of interest on the Convore
@@ -23,8 +23,7 @@ In english, these would look like:
 * notify me of new topics in group 'weather' with growl
 * notify me of logins of user bob with prowl
 * notify me of messages by user John in group 'lunch' with prowl and growl
-* notify me of messages containing "beef" starred by George, written by Sue by
-email
+* notify me of messages containing "beef" starred by George, written by Sue by email
 
 etc
 
@@ -110,6 +109,7 @@ Current builtin actions include:
 Additional notifier actions can be written and added. Some might include:
 
 * direct Prowl API, to use without growl or a Mac
+* use Ubuntu's libnotify (growl like)
 * email
 * sms
 * Android C2DM push system
