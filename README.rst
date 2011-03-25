@@ -18,12 +18,12 @@ if a match is found, it executes the associated actions.
 
 In english, these would look like:
 
-notify me of mentions in the topic 'cool stuff' with prowl
-notify me of messages by user joe34 with growl
-notify me of new topics in group 'weather' with growl
-notify me of logins of user bob with prowl
-notify me of messages by user John in group 'lunch' with prowl and growl
-notify me of messages containing "beef" starred by George, written by Sue by
+* notify me of mentions in the topic 'cool stuff' with prowl
+* notify me of messages by user joe34 with growl
+* notify me of new topics in group 'weather' with growl
+* notify me of logins of user bob with prowl
+* notify me of messages by user John in group 'lunch' with prowl and growl
+* notify me of messages containing "beef" starred by George, written by Sue by
 email
 
 etc
