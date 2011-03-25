@@ -1,5 +1,6 @@
 import re
 import time
+import warning
 
 
 class Rule(object):
@@ -52,10 +53,14 @@ class Rule(object):
         self.last_action = 0
         if self.match_events and self.exclude_events:
             raise ValueError("can only define events to match or exclude, not both")
-        if self.match_attributes and self.exclude_attributes:
-            raise ValueError("can only define attributes to match or exclude, not both")
-        # TODO: verify that attributes make sense:
-        #   for example can't filter to group and topic (especially if topic not in that group)
+        for match_key in self.match_attributes:
+            if match_key in self.exclude_attributes:
+                raise ValueError("you can match or exclude %s, but not both" %
+                        match_key)
+        for filter in [self.match_attributes, self.exclude_attributes]:
+            if ('topic' in filter and 'group' in filter):
+                warning.warn(
+                    "both topic and group in a filter will limit notices to only the topic")
 
         # TODO support case insensive message search
 
