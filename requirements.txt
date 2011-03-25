@@ -1,0 +1,3 @@
+-e git://github.com/foobarbuzz/convoread.git#egg=convoread
+-e git://github.com/ptone/pygrowl.git#egg=Growl
+
