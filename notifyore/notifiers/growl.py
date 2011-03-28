@@ -72,7 +72,7 @@ class GrowlNotifier(BaseNotifier):
             # notification_args['title'] = "%s mentioned you" % notification_args['title']
             user_line = "%s mentioned you" % message['n_user']
         elif kind == 'topic':
-            title = "%s created a new topic/nin %s" % (message['n_user'], message['n_group'])
+            title = "%s created a new topic\nin %s" % (message['n_user'], message['n_group'])
             description = message['n_topic']
         elif kind in ['login','logout']:
             description = kind
